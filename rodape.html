@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
-	.backgroundp {
-    	background-color: #4682B4;
-    }
-    .background {
-    	background-color: #B0C4DE;
-    }
-	.footer {
-    	text-align: center; /* Centralizando todo o conteúdo do rodapé*/
-    }
-	.footer h3 {
+    <style>
+        .backgroundp {
+            background-color: #4682B4;
+        }
+        .background {
+            background-color: #B0C4DE;
+        }
+        .footer {
+            text-align: center; /* Centralizando todo o conteúdo do rodapé*/
+            display: flex; /* Usando flexbox */
+            justify-content: space-around; /* Espaço uniforme entre as divs */
+            flex-wrap: wrap; /* Permitindo que as divs quebrem para a próxima linha */
+        }
+        .footer-column {
+            flex: 1; /* Cada coluna ocupará a mesma largura */
+        }
+        .footer h3 {
             display: inline; /* Alterando a exibição para inline */
             margin: 0 50px; /* Adicionando margem para separar as tags */
-    }
-    .footer ul {
+        }
+        .footer ul {
             list-style-type: none; /* Removendo os marcadores de lista */
             padding: 0; /* Removendo o preenchimento padrão da lista */
-    }
-</style>
+        }
+    </style>
+</head>
 <body>
     <header>
         <h1>Cabeçalho do site</h1>
@@ -32,36 +38,36 @@
     <h1>Conteúdo do site</h1>
     <footer class="footer background">
         <hr>
-        <div class="footer h3">
-        	<h3>Início</h3>
+        <div class="footer-column">
+            <h3>Início</h3>
             <ul>
-            <li>Home</li>
-            <li>Cursos</li>
-            <li>Dúvidas frequentes</li>
-            <li>Ouvidoria</li>
+                <li>Home</li>
+                <li>Cursos</li>
+                <li>Dúvidas frequentes</li>
+                <li>Ouvidoria</li>
             </ul>
         </div>
-        <div class="footer h3">
-        	<h3>Sobre nós</h3>
+        <div class="footer-column">
+            <h3>Sobre nós</h3>
             <ul>
-            <li>Quem somos</li>
-            <li>Propósito do site</li>
+                <li>Quem somos</li>
+                <li>Propósito do site</li>
             </ul>
         </div>
-        <div class="footer h3">
-        	<h3>Suporte</h3>
+        <div class="footer-column">
+            <h3>Suporte</h3>
             <ul>
-            <li>Telefone</li>
-            <li>Sugestões</li>
-            <li>Endereço</li>
+                <li>Telefone</li>
+                <li>Sugestões</li>
+                <li>Endereço</li>
             </ul>
         </div>
-        <div class="footer h3">
-        	<h3>Redes sociais</h3>
+        <div class="footer-column">
+            <h3>Redes sociais</h3>
             <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
             </ul>
         </div>
         <p class="backgroundp">&copy; 2024 Yvone Pimentel HighSync. Todos os direitos reservados.</p>
