@@ -1,94 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rodapé</title>
     <style>
-    	.textobranco {
-        	color: white;
-        }
-        .textobrancoclaro {
-        	color: #DCDCDC;
-        }
-        .paragrafo {
-            background-color: #1C1C1C;
-            margin-top: auto;
-            text-align: center;
-        }
-        .background {
-            background-color: #363636;
+        body {
+            font-family: Arial, sans-serif; /* Fonte padrão */
+            margin: 0;
+            padding: 0;
         }
         .footer {
-            text-align: center; /* Centralizando todo o conteúdo do rodapé*/
-            display: flex; /* Usando flexbox */
-            justify-content: space-around; /* Espaço uniforme entre as divs */
-            flex-wrap: wrap; /* Permitindo que as divs quebrem para a próxima linha */
+            background-color: #363636;
+            color: #DCDCDC;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid #1C1C1C; /* Adicionando uma borda superior */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
         .footer-column {
-            flex: 1; /* Cada coluna ocupará a mesma largura */
+            flex: 1;
+            margin: 20px; /* Espaçamento entre as colunas */
         }
         .footer h3 {
-            display: inline; /* Alterando a exibição para inline */
-            margin: 0 50px; /* Adicionando margem para separar as tags */
+            margin-bottom: 10px;
         }
         .footer ul {
-            list-style-type: none; /* Removendo os marcadores de lista */
-            padding: 0; /* Removendo o preenchimento padrão da lista */
+            list-style-type: none;
+            padding: 0;
         }
-        .degrade {
-        	background-image: linear-gradient(#E6E6FA, #C8CCED);
+        .footer ul li {
+            margin-bottom: 5px;
         }
-        .topicosrodape {
-        	text-decoration: none;
+        .footer ul li a {
             color: #DCDCDC;
+            text-decoration: none;
+            transition: color 0.3s; /* Adicionando uma transição suave para a mudança de cor */
         }
-        a:hover {
-        	color: red;
+        .footer ul li a:hover {
+            color: red; /* Mudando a cor do texto ao passar o mouse */
+        }
+        .footer p {
+            margin-top: 20px; /* Espaçamento acima do texto de direitos autorais */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Cabeçalho do site</h1>
-        <hr>
-    </header>
-    <h1>Conteúdo do site</h1>
-    <hr>
-    <footer class="footer background textobranco">    
-        <div class="footer-column">
-            <h3>Início</h3>
-            <ul>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Home</a></li>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Cursos</a></li>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Dúvidas frequentes</a></li>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Ouvidoria</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column">
+                <h3>Início</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Dúvidas frequentes</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Sobre nós</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Propósito do site</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">Telefone</a></li>
+                    <li><a href="#">Sugestões</a></li>
+                    <li><a href="#">Endereço</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-column">
-            <h3>Sobre nós</h3>
-            <ul>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Quem somos</a></li>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Propósito o site</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Suporte</h3>
-            <ul>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Telefone</a></li>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Sugestões</a></li>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Endereço</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Redes sociais</h3>
-            <ul>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Instagram</a></li>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Facebook</a></li>
-                <li><a class="topicosrodape" href="https://www.creativefabrica.com/wp-content/uploads/2019/05/Home-icon-by-ahlangraphic-580x386.jpg">Twitter</a></li>
-            </ul>
-        </div>
+        <p>&copy; 2024 Nome da Empresa. Todos os direitos reservados.</p>
     </footer>
-    <p class="paragrafo textobranco">&copy; 2024 Yvone Pimentel HighSync. Todos os direitos reservados.</p>
 </body>
 </html>
