@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="#">
+            <div class="card-content">
+                <h3>Card 1</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  a</p>
+                <a href="" class="btn">Read More!</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="#">
+            <div class="card-content">
+                <h3>Card 2</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  a</p>
+                <a href="" class="btn">Read More!</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="#">
+            <div class="card-content">
+                <h3>Card 3</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard  a</p>
+                <a href="" class="btn">Read More!</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
